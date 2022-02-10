@@ -1,6 +1,6 @@
 
 function saludar(){
-    console.log("Hola a todos");
+    console.log("Hola a todos en el lugar");
 }
 
-export default saludar;
+export default saludar; 

@@ -11,7 +11,8 @@ function router(req, res) {
     res.write('Ruta => '+ req.url);
     switch (req.url) {
         case '/hola':
-            res.write('\n\rHola desde la ruta'+ req.url);
+            let saludo = hola();
+            res.write("\n"+saludo);
             res.end();
             break;
         default:
@@ -21,3 +22,7 @@ function router(req, res) {
     }
 }
 console.info('escuchando 3000');
+
+function hola(){
+    return 'Hola, que tal';
+}
